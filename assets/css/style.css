@@ -1370,3 +1370,13 @@ body { overflow-x: hidden; }
   line-height: 1 !important;
   vertical-align: middle !important;
 }
+/* ===== HIDE NAV BUTTON MOBILE ===== */
+@media (max-width: 768px) {
+  .btn-nav, a.btn-nav,
+  nav a[class*="btn"], .navbar a[class*="btn"],
+  .navbar .btn-gold, .navbar .btn-green,
+  .navbar-right a[class*="btn"],
+  a[class*="nav-cta"], a[class*="btn-nav"] {
+    display: none !important;
+  }
+}
