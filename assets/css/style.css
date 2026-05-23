@@ -1296,3 +1296,77 @@ nav .btn-nav, .navbar .btn-nav,
   height: 2px !important;
   margin: 0 auto !important;
 }
+/* ===== NAVBAR MOBILE: hide CTA button, fix burger ===== */
+@media (max-width: 768px) {
+
+  /* Hide navbar CTA button on mobile - hero has buttons */
+  .btn-nav, a.btn-nav, button.btn-nav,
+  nav a[class*="btn"], .navbar a[class*="btn"],
+  .nav-cta, .navbar-cta, [class*="nav-bonus"],
+  .navbar .btn-gold, .navbar .btn-green,
+  nav .btn-gold, nav .btn-green,
+  nav > a[class*="btn"], .navbar > div > a[class*="btn"] {
+    display: none !important;
+  }
+
+  /* Navbar: logo left, burger right, no overflow */
+  .navbar, nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 16px !important;
+    height: 56px !important;
+    overflow: visible !important;
+    position: fixed !important;
+    top: 0 !important; left: 0 !important; right: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    z-index: 1000 !important;
+  }
+
+  /* Nav links: hidden on mobile (opened by burger) */
+  .nav-links, .navbar-links, .nav-menu, [class*="nav-links"] {
+    display: none !important;
+  }
+  .nav-links.open, .nav-menu.open, .nav-links.active {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    top: 56px !important; left: 0 !important; right: 0 !important;
+    background: rgba(8,4,20,0.98) !important;
+    padding: 1rem !important;
+    gap: 0.8rem !important;
+    z-index: 999 !important;
+  }
+
+  /* Burger: always visible, right side */
+  .burger, .hamburger, .nav-toggle,
+  [class*="burger"], [class*="hamburger"],
+  button[class*="toggle"], button[class*="menu"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    gap: 5px !important;
+    cursor: pointer !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Prevent any text overflow */
+  .navbar *, nav * {
+    max-width: 100% !important;
+  }
+  .logo-text, .navbar-brand, [class*="logo-text"] {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: calc(100vw - 80px) !important;
+  }
+}
