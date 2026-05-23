@@ -1265,7 +1265,7 @@ body { overflow-x: hidden; }
   }
   .hero-split-left { text-align: center !important; }
   /* Keep right side hidden only on main hero (has the card overlay) */
-  .hero-split-right { display: none !important; }
+  .hero-split-right { display: block !important; margin-top: 1rem; }
 
   /* BUTTONS: full width stacked */
   .hero-buttons {
@@ -1311,7 +1311,7 @@ body { overflow-x: hidden; }
   .kh-btn-gold, .kh-btn-outline {
     width: 100% !important; justify-content: center !important;
   }
-  .kh-hero-right { display: none !important; }
+  .kh-hero-right { display: block !important; }
 
   /* SECTION padding */
   .section { padding: 2rem 4% !important; }
