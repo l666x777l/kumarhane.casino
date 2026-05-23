@@ -1384,3 +1384,27 @@ img, video, iframe, table { max-width: 100% !important; }
   }
   pre, code { white-space: pre-wrap !important; overflow-x: auto !important; }
 }
+/* ===== SCROLLBAR & CONTAINER FIX ===== */
+/* Hide scrollbar on mobile, fix overflow */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar { display: none !important; width: 0 !important; }
+  * { scrollbar-width: none !important; -ms-overflow-style: none !important; }
+
+  /* Hide floating decorative elements that overflow */
+  .hd-suit, .hd-chip, .hero-decos,
+  [class*="hd-"], [class*="hero-deco"] {
+    display: none !important;
+  }
+}
+
+/* 7K: reduce container width on mobile */
+@media (max-width: 768px) {
+  .hero-split, .hero-split-left,
+  .casino-hero-inner, .casino-hero-card,
+  .section, .container, [class*="section"] {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+  }
+  .hero-split-right { display: none !important; }
+  .hero-split { grid-template-columns: 1fr !important; gap: 0 !important; }
+}
