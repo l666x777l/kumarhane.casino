@@ -1336,3 +1336,25 @@ body { overflow-x: hidden; }
     justify-content: center !important;
   }
 }
+/* ===== FOOTER MOBILE: single column ===== */
+@media (max-width: 768px) {
+  footer .footer-grid,
+  footer [class*="footer-grid"],
+  footer [class*="footer-cols"],
+  .footer-grid, .footer-columns, .footer-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  footer { padding: 2rem 5% 1.5rem !important; }
+  .footer-bottom {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 0.4rem !important;
+  }
+  .footer-links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+}
