@@ -1336,25 +1336,26 @@ body { overflow-x: hidden; }
     justify-content: center !important;
   }
 }
-/* ===== FOOTER MOBILE: single column ===== */
+
+/* ===== FOOTER MOBILE: compact 2-col ===== */
 @media (max-width: 768px) {
-  footer .footer-grid,
-  footer [class*="footer-grid"],
-  footer [class*="footer-cols"],
-  .footer-grid, .footer-columns, .footer-inner {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 1.5rem !important;
+  footer { padding: 1.2rem 4% !important; }
+  .footer-grid, footer > div:not(.footer-bottom):not(.gambling-warning) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem 1.5rem !important;
   }
-  footer { padding: 2rem 5% 1.5rem !important; }
+  .footer-brand { font-size: 0.9rem !important; }
+  .footer-desc { font-size: 0.72rem !important; display: none !important; }
+  .footer-col-title { font-size: 0.72rem !important; margin-bottom: 0.4rem !important; }
+  .footer-links a { font-size: 0.72rem !important; padding: 0.15rem 0 !important; }
   .footer-bottom {
     flex-direction: column !important;
     text-align: center !important;
-    gap: 0.4rem !important;
+    gap: 0.2rem !important;
+    margin-top: 0.8rem !important;
+    padding-top: 0.8rem !important;
+    font-size: 0.68rem !important;
   }
-  .footer-links {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0.5rem !important;
-  }
+  .gambling-warning { font-size: 0.68rem !important; padding: 0.6rem !important; }
 }
