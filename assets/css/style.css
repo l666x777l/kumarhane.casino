@@ -1359,3 +1359,14 @@ body { overflow-x: hidden; }
   }
   .gambling-warning { font-size: 0.68rem !important; padding: 0.6rem !important; }
 }
+/* ===== NAVBAR BUTTON TEXT CENTER (all screens) ===== */
+.btn-nav, a.btn-nav, nav a.btn-nav,
+.navbar a[class*="btn"], nav a[class*="btn"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
