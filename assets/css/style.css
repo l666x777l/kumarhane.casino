@@ -1256,3 +1256,43 @@ img { max-width: 100%; height: auto; }
   .section-title { font-size: 1.3rem !important; }
   .section { padding: 1.5rem 1rem !important; }
 }
+/* ===== NAVBAR BUTTON & BURGER CENTER FIX ===== */
+/* Navbar CTA button - text centered */
+.btn-nav, a.btn-nav, button.btn-nav,
+nav .btn-nav, .navbar .btn-nav,
+[class*="nav-btn"], [class*="navbar-btn"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+}
+
+/* Burger / hamburger menu button */
+.burger, .hamburger, .nav-toggle,
+[class*="burger"], [class*="hamburger"],
+[class*="menu-toggle"], [class*="nav-toggle"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  background: none !important;
+  border: none !important;
+}
+
+/* Burger lines centered */
+.burger span, .hamburger span,
+[class*="burger"] span, [class*="hamburger"] span,
+.burger-line, [class*="burger-line"] {
+  display: block !important;
+  width: 22px !important;
+  height: 2px !important;
+  margin: 0 auto !important;
+}
