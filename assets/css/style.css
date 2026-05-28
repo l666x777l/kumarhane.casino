@@ -1380,3 +1380,77 @@ body { overflow-x: hidden; }
     display: none !important;
   }
 }
+
+
+/* === HERO COMPACT UPGRADE === */
+.hero {
+  min-height: auto !important;
+  padding: 85px 4% 30px !important; /* Reduced top and bottom padding */
+}
+.hero-grid {
+  gap: 1.5rem !important;
+  align-items: center !important;
+}
+.hero-right {
+  max-width: 375px !important; /* INCREASED BY ~10% (was 340px) */
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+.hero-split-right {
+  max-width: 375px !important; /* INCREASED BY ~10% (was 340px) */
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+/* Shrink image padding/radius a bit to fit the compact look */
+.hero-right img, .hero-split-right img {
+  border-radius: 16px !important; 
+}
+.hero-title {
+  font-size: clamp(1.8rem, 4.2vw, 2.8rem) !important;
+  margin-bottom: 0.6rem !important;
+}
+.hero-sub {
+  margin-bottom: 1rem !important;
+}
+.hero-badge {
+  margin-bottom: 0.8rem !important;
+}
+.hero-pills {
+  margin-bottom: 1.2rem !important;
+}
+.hero-btns {
+  margin-top: 15px !important;
+}
+.hero-btns .btn-gold {
+    padding: 14px 24px !important;
+    font-size: 1.05rem !important;
+    text-transform: uppercase !important; /* FIX "Ol" LOOKING LIKE "OI" */
+    letter-spacing: 0.5px !important;
+}
+.hero-img-card {
+    padding: 0.8rem 1.4rem !important; /* Tighter form */
+    bottom: -1rem !important;
+}
+/* Shrink fonts inside the right form */
+.hero-img-card > div:nth-child(1), .ic-label {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.3rem !important;
+}
+.hero-img-card > div:nth-child(2), .ic-bonus {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+.hero-img-card > a, .ic-btn {
+    padding: 0.8rem 1.2rem !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important; /* FIX "Ol" LOOKING LIKE "OI" */
+    letter-spacing: 0.5px !important;
+}
+.btn-reg, .btn-outline, .promo-btn, .sticky-btn, .play-btn, .hero-reg-btn {
+    text-transform: uppercase !important; /* FIX "Ol" LOOKING LIKE "OI" ACROSS THE ENTIRE SITE */
+    letter-spacing: 0.5px !important;
+}
+@media(max-width:640px) {
+  .hero-right, .hero-split-right { display: none !important; }
+  .hero { padding: 75px 4% 30px !important; }
+}
